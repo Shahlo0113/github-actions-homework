@@ -1,7 +1,28 @@
 name: My Story Workflows
 on:
+  push:
+    branches:
+    -main
   pull_request:
-    branches: [ "main" ]
-    jobs:
-      build:
- runs-on: ubuntu-latest
+    paths:
+     - 'storybook/**'
+  workflow dispatch:
+    inputs:
+      story_title: 
+        description: 'Rainbow Umbrella'
+        required: true
+    inputs:
+      author_name: 
+        description: Ann Hoang
+        required: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+- name: Write story
+        run: |
+          echo "echo "Once upon a time in a faraway land"
+		      echo "<Story Title Input> was written by <Author Name Input>"
+		      echo "This whimsical tale takes you on a journey through a magical forest where every flower could talk."
+		      echo "Will you explore its secrets?" 
