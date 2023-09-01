@@ -27,6 +27,6 @@ jobs:
      - name: My story
        run: |
          echo "Once upon a time in a faraway land"
-         echo "${{ Rainbow }} was written by ${{ Ann Hoang }}"
+         echo "${{ Rainbow Umbrella }} was written by ${{ Ann Hoang }}"
          echo "This whimsical tale takes you on a journey through a magical forest where every flower could talk."
          echo "Will you explore its secrets?"
