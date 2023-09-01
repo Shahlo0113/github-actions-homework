@@ -1,9 +1,6 @@
 name: My Story Workflows
 
 on:
-  pull_request:
-    paths:
-      - 'storybook/**'
   workflow_dispatch:
     inputs:
       story_title:
