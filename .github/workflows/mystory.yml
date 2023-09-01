@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - 'storybook/**'
-  workflow_dispatch:
+workflow_dispatch:
     inputs:
       story_title:
         description: 'Rainbow Umbrella'
