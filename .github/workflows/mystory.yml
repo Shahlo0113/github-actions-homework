@@ -4,9 +4,10 @@ on:
   push:
     branches:
       - main
+  pull:
     paths:
       - 'storybook/**'
-workflow_dispatch:
+  workflow_dispatch:
     inputs:
       story_title:
         description: 'Rainbow Umbrella'
