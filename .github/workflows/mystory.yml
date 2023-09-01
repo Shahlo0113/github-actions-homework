@@ -1,7 +1,10 @@
 name: My Story Workflows
 
 on:
-  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'storybook/**'
+   workflow_dispatch:
     inputs:
       story_title:
         description: 'Rainbow Umbrella'
